@@ -1,0 +1,287 @@
+html,
+body {
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+header {
+    text-align: center;
+    font-size: xx-large;
+    background-color: #003346;
+    color: #fff;
+    padding: 10px;
+}
+
+/*Nav area start*/
+
+nav {
+    background-color: #aaa;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding-left: 0;
+}
+
+li {
+    color: #fff;
+    display: block;
+    float: left;
+    padding: 10px 15px;
+    position: relative;
+    text-decoration: none;
+    transition-duration: 0.5s;
+}
+
+li a {
+    color: #fff;
+}
+
+li:hover {
+    cursor: pointer;
+    background: black;
+}
+
+ul li ul {
+    visibility: hidden;
+    opacity: 0;
+    min-width: 5rem rem;
+    position: absolute;
+    transition: all 0.5s ease;
+    left: 0;
+    display: none;
+    margin-top: 0.6rem;
+    z-index: 999;
+    box-shadow: coral 2px 2px 2px;
+}
+
+ul li:hover>ul,
+ul li ul:hover {
+    visibility: visible;
+    opacity: 1;
+    display: block;
+}
+
+ul li ul li {
+    clear: both;
+    padding: 10px;
+    width: 100%;
+    margin: 0;
+    box-sizing: border-box;
+    background-color: lightgrey;
+    white-space: nowrap;
+}
+
+ul li ul li a {
+    color: darkslateblue;
+}
+
+ul li ul li:hover a {
+    color: white;
+}
+
+span {
+    display: block;
+    clear: both;
+}
+
+/*Nav area end*/
+
+.offer {
+    position: relative;
+    text-align: center;
+    height: 300px;
+    border: 2px solid steelblue;
+    overflow: hidden;
+}
+
+.offer img {
+    float: left;
+}
+
+.offer .display-btn {
+    position: absolute;
+    top: 125px;
+    z-index: 999;
+    background-color: rgba(0, 0, 0, 0.8);
+    border: 1px solid black;
+    padding: 15px;
+    font-size: 20px;
+    color: white;
+}
+
+.offer .display-btn.left {
+    left: 0;
+}
+
+.offer .display-btn.right {
+    right: 0;
+}
+
+.group {
+    /* border: 2px solid black; */
+    margin: 20px;
+    padding: 10px 10px 20px 10px;
+}
+
+.group h2 {
+    margin: 0 0 30px 10px;
+}
+
+.group .products {
+    gap: 1rem;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+@media (max-width: 1000px) {
+    .group .products {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .group .products {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 400px) {
+    .group .products {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .form .image {
+        display: none;
+    }
+
+    .group {
+        margin: 0;
+    }
+}
+
+.group .product {
+    box-sizing: border-box;
+    border: 1px solid rgb(236, 255, 236);
+    box-shadow: 3px 3px 3px lightgrey;
+    margin: 0 10px;
+    padding: 10px;
+}
+
+.group .product:hover {
+    transform: scale(1.025);
+}
+
+.group .product .name {
+    font-weight: 500;
+}
+
+.group .product .image {
+    height: 260px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.group .product .image,
+.group .product img {
+    width: 100%;
+}
+
+.group .product img {
+    vertical-align: middle;
+}
+
+.group .product:hover .image img {
+    width: 100%;
+}
+
+.group .product .price {
+    margin-bottom: 10px;
+}
+
+.group .product .price,
+.group .product .offer-price {
+    color: rgb(0, 145, 230);
+}
+
+.group .product .cart-btn {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid lightskyblue;
+    box-sizing: border-box;
+    margin: 10px 0;
+    background-color: lightcyan;
+    font-weight: bold;
+    color: orange;
+    text-align: center;
+    cursor: pointer;
+}
+
+.group .product .cart-btn:hover {
+    background-color: rgb(209, 236, 253);
+    border: 1px solid rgb(17, 117, 47);
+    user-select: none;
+}
+
+.group .product .cart-btn:active {
+    background-color: rgb(250, 234, 230);
+    border: 1px solid rgb(0, 255, 76);
+    user-select: none;
+}
+
+
+footer {
+    background-color: black;
+    color: #fff;
+    padding: 20px;
+}
+
+
+
+
+.group.form,
+.form .two-col {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.form label {
+    display: block;
+    margin: 20px 0 10px 0;
+}
+
+.form input[type="text"] {
+    display: block;
+    padding: 6px;
+    margin: 6px;
+}
+
+.form input[type="date"],
+.form input[type="time"] {
+    padding: 6px;
+    margin: 6px 6px 30px 6px;
+
+}
+
+.form form>div {
+    margin-bottom: 30px;
+}
+
+
+.form button {
+    border: 1px solid grey;
+    padding: 10px;
+    margin: 6px;
+}

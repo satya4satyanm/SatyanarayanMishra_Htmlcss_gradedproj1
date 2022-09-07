@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pharmacy</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body onload="startSlides()">
+    <header>Pharmacy</header>
+    <section>
+      <nav role="navigation">
+        <ul>
+          <li>
+            <a href="#">Home</a>
+          </li>
+          <li>
+            <a href="#">Our Medicines</a>
+            <ul class="dropdown">
+              <li><a href="#">Fever</a></li>
+              <li><a href="#">Muscle Pains</a></li>
+              <li><a href="#">Cold & Cough</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">Health Care</a>
+            <ul class="dropdown">
+              <li><a href="#">Baby Care</a></li>
+              <li><a href="#">Skin Care</a></li>
+              <li><a href="#">Home Care</a></li>
+              <li><a href="#">Personal Care</a></li>
+              <li><a href="#">Pet Care</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="./lab-test.html">Lab Test</a>
+          </li>
+        </ul>
+        <span></span>
+      </nav>
+
+      <section class="offer">
+        <div class="w3-content w3-display-container">
+          <img
+            class="mySlides"
+            src="./assets/Animation/ani1.jpg"
+            style="width:100%"
+          />
+          <img
+            class="mySlides"
+            src="./assets/Animation/ani2.png"
+            style="width:100%"
+          />
+          <img
+            class="mySlides"
+            src="./assets/Animation/ani3.jpg"
+            style="width:100%"
+          />
+          <img
+            class="mySlides"
+            src="./assets/Animation/ani4.jpg"
+            style="width:100%"
+          />
+          <img
+            class="mySlides"
+            src="./assets/Animation/ani5.jpg"
+            style="width:100%"
+          />
+
+          <button class="display-btn left" onclick="plusDivs(-1)">
+            &#10094;
+          </button>
+          <button class="display-btn right" onclick="plusDivs(1)">
+            &#10095;
+          </button>
+        </div>
+      </section>
+
+      <section class="group">
+        <h2>Covid Care</h2>
+        <div class="products">
+          <div class="product">
+            <div class="name">Covid Test Kit</div>
+            <div class="image">
+              <img src="./assets/Products/c1.jpg" />
+            </div>
+            <div class="price">Rs. 40</div>
+            <div class="offer-price">Offer: Rs. 30</div>
+            <div class="cart-btn">Add to cart</div>
+          </div>
+          <div class="product">
+            <div class="name">Covid Essentials</div>
+            <div class="image">
+              <img src="./assets/Products/c2.jpg" />
+            </div>
+            <div class="price">Rs. 240</div>
+            <div class="offer-price">Offer: Rs. 170</div>
+            <div class="cart-btn">Add to cart</div>
+          </div>
+          <div class="product">
+            <div class="name">Sanitizer Bottle</div>
+            <div class="image">
+              <img src="./assets/Products/c3.jpg" />
+            </div>
+            <div class="price">Rs. 99</div>
+            <div class="offer-price">Offer: Rs. 87</div>
+            <div class="cart-btn">Add to cart</div>
+          </div>
+          <div class="product">
+            <div class="name">Mask</div>
+            <div class="image">
+              <img src="./assets/Products/c4.jpg" />
+            </div>
+            <div class="price">Rs. 45</div>
+            <div class="offer-price">Offer: Rs. 30</div>
+            <div class="cart-btn">Add to cart</div>
+          </div>
+        </div>
+      </section>
+      <section class="group">
+        <h2>Diabetes Care</h2>
+        <div class="products">
+          <div class="product">
+            <div class="name">Mask</div>
+            <div class="image"><img src="./assets/Products/d1.jpg" /></div>
+            <div class="price">Rs. 45</div>
+            <div class="offer-price">Offer: Rs. 30</div>
+            <div class="cart-btn">Add to cart</div>
+          </div>
+          <div class="product">
+            <div class="name">Mask</div>
+            <div class="image"><img src="./assets/Products/d2.jpg" /></div>
+            <div class="price">Rs. 45</div>
+            <div class="offer-price">Offer: Rs. 30</div>
+            <div class="cart-btn">Add to cart</div>
+          </div>
+          <div class="product">
+            <div class="name">Mask</div>
+            <div class="image"><img src="./assets/Products/d3.jpg" /></div>
+            <div class="price">Rs. 45</div>
+            <div class="offer-price">Offer: Rs. 30</div>
+            <div class="cart-btn">Add to cart</div>
+          </div>
+          <div class="product">
+            <div class="name">Mask</div>
+            <div class="image"><img src="./assets/Products/d4.png" /></div>
+            <div class="price">Rs. 45</div>
+            <div class="offer-price">Offer: Rs. 30</div>
+            <div class="cart-btn">Add to cart</div>
+          </div>
+        </div>
+      </section>
+    </section>
+    <footer>@copyright. Only for demonstration purposes</footer>
+    <script src="./script.js"></script>
+  </body>
+</html>
